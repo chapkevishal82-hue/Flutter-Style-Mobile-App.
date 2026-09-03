@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Flutter Style Mobile App</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Icons -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+<div class="app-container">
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="top-bar">
+
+        <div>
+            <p class="welcome-text">Good Evening 👋</p>
+            <h2 id="userName">Vishal</h2>
+        </div>
+
+        <div class="header-actions">
+
+            <button class="icon-btn" id="themeBtn">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+
+            <button class="notification-btn">
+                <i class="fa-regular fa-bell"></i>
+                <span class="notification-dot"></span>
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= MAIN CONTENT ================= -->
+
+    <main id="mainContent">
+
+
+        <!-- HOME PAGE -->
+
+        <section class="page active-page" id="homePage">
+
+            <!-- Search -->
+
+            <div class="search-box">
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search anything..."
+                >
+
+                <button>
+                    <i class="fa-solid fa-sliders"></i>
+                </button>
+
+            </div>
+
+
+            <!-- Balance Card -->
+
+            <div class="balance-card">
+
+                <div class="balance-top">
+
+                    <div>
+                        <p>Total Balance</p>
+                        <h1>$24,850.00</h1>
+                    </div>
+
+                    <div class="card-icon">
+                        <i class="fa-solid fa-wallet"></i>
+                    </div>
+
+                </div>
+
+
+                <div class="balance-bottom">
+
+                    <div>
+
+                        <span>Income</span>
+
+                        <h3>
+                            <i class="fa-solid fa-arrow-trend-up"></i>
+                            $8,240
+                        </h3>
+
+                    </div>
+
+
+                    <div>
+
+                        <span>Expenses</span>
+
+                        <h3>
+                            <i class="fa-solid fa-arrow-trend-down"></i>
+                            $2,430
+                        </h3>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Quick Actions -->
+
+            <section class="section">
+
+                <div class="section-header">
+
+                    <h2>Quick Actions</h2>
+
+                    <button class="text-btn">
+                        View All
+                    </button>
+
+                </div>
+
+
+                <div class="quick-actions">
+
+
+                    <div class="action-item">
+
+                        <div class="action-icon purple">
+                            <i class="fa-solid fa-paper-plane"></i>
+                        </div>
+
+                        <span>Send</span>
+
+                    </div>
+
+
+                    <div class="action-item">
+
+                        <div class="action-icon blue">
+                            <i class="fa-solid fa-download"></i>
+                        </div>
+
+                        <span>Receive</span>
+
+                    </div>
+
+
+                    <div class="action-item">
+
+                        <div class="action-icon orange">
+                            <i class="fa-solid fa-credit-card"></i>
+                        </div>
+
+                        <span>Cards</span>
+
+                    </div>
+
+
+                    <div class="action-item">
+
+                        <div class="action-icon pink">
+                            <i class="fa-solid fa-chart-line"></i>
+                        </div>
+
+                        <span>Analytics</span>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- Statistics -->
+
+            <section class="section">
+
+                <div class="section-header">
+
+                    <h2>Activity</h2>
+
+                    <button class="text-btn">
+                        See More
+                    </button>
+
+                </div>
+
+
+                <div class="stats-grid">
+
+
+                    <div class="stat-card">
+
+                        <div class="stat-icon">
+                            <i class="fa-solid fa-chart-simple"></i>
+                        </div>
+
+                        <div>
+
+                            <p>Monthly Growth</p>
+
+                            <h2>+24.8%</h2>
+
+                            <span class="positive">
+                                ↑ This Month
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="stat-card">
+
+                        <div class="stat-icon">
+                            <i class="fa-solid fa-users"></i>
+                        </div>
+
+                        <div>
+
+                            <p>Active Users</p>
+
+                            <h2>12.5K</h2>
+
+                            <span class="positive">
+                                +1.2K New
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </section>
+
+
+            <!-- Recent Activity -->
+
+            <section class="section">
+
+                <div class="section-header">
+
+                    <h2>Recent Activity</h2>
+
+                    <button class="text-btn">
+                        View All
+                    </button>
+
+                </div>
+
+
+                <div class="activity-list">
+
+
+                    <div class="activity-item">
+
+                        <div class="activity-icon shopping">
+
+                            <i class="fa-solid fa-bag-shopping"></i>
+
+                        </div>
+
+
+                        <div class="activity-info">
+
+                            <h3>Online Shopping</h3>
+
+                            <p>Today, 10:30 AM</p>
+
+                        </div>
+
+
+                        <div class="amount negative">
+
+                            - $120.00
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="activity-item">
+
+                        <div class="activity-icon salary">
+
+                            <i class="fa-solid fa-briefcase"></i>
+
+                        </div>
+
+
+                        <div class="activity-info">
+
+                            <h3>Salary Received</h3>
+
+                            <p>Yesterday, 09:00 AM</p>
+
+                        </div>
+
+
+                        <div class="amount positive">
+
+                            + $2,500
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="activity-item">
+
+                        <div class="activity-icon transfer">
+
+                            <i class="fa-solid fa-money-bill-transfer"></i>
+
+                        </div>
+
+
+                        <div class="activity-info">
+
+                            <h3>Money Transfer</h3>
+
+                            <p>Aug 28, 2026</p>
+
+                        </div>
+
+
+                        <div class="amount negative">
+
+                            - $350
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </section>
+
+
+        </section>
+
+
+        <!-- ================= ANALYTICS PAGE ================= -->
+
+        <section class="page" id="analyticsPage">
+
+            <h1 class="page-title">Analytics</h1>
+
+            <div class="chart-card">
+
+                <div class="chart-header">
+
+                    <div>
+
+                        <p>Monthly Revenue</p>
+
+                        <h2>$48,240</h2>
+
+                    </div>
+
+                    <span class="positive">
+                        +18.4%
+                    </span>
+
+                </div>
+
+
+                <div class="bar-chart">
+
+                    <div class="bar" style="height: 45%"></div>
+                    <div class="bar" style="height: 65%"></div>
+                    <div class="bar" style="height: 50%"></div>
+                    <div class="bar" style="height: 85%"></div>
+                    <div class="bar" style="height: 70%"></div>
+                    <div class="bar active-bar" style="height: 100%"></div>
+
+                </div>
+
+
+                <div class="chart-labels">
+
+                    <span>Apr</span>
+                    <span>May</span>
+                    <span>Jun</span>
+                    <span>Jul</span>
+                    <span>Aug</span>
+                    <span>Sep</span>
+
+                </div>
+
+            </div>
+
+
+            <div class="analytics-card">
+
+                <h3>Performance</h3>
+
+                <div class="progress-item">
+
+                    <div class="progress-info">
+
+                        <span>Productivity</span>
+                        <span>82%</span>
+
+                    </div>
+
+                    <div class="progress-bar">
+
+                        <div class="progress purple-progress"
+                             style="width:82%">
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="progress-item">
+
+                    <div class="progress-info">
+
+                        <span>Projects</span>
+                        <span>68%</span>
+
+                    </div>
+
+                    <div class="progress-bar">
+
+                        <div class="progress blue-progress"
+                             style="width:68%">
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="progress-item">
+
+                    <div class="progress-info">
+
+                        <span>Goals</span>
+                        <span>91%</span>
+
+                    </div>
+
+                    <div class="progress-bar">
+
+                        <div class="progress pink-progress"
+                             style="width:91%">
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= NOTIFICATIONS PAGE ================= -->
+
+        <section class="page" id="notificationsPage">
+
+            <h1 class="page-title">Notifications</h1>
+
+
+            <div class="notification-card">
+
+                <div class="notification-icon purple">
+
+                    <i class="fa-solid fa-circle-check"></i>
+
+                </div>
+
+
+                <div>
+
+                    <h3>Payment Successful</h3>
+
+                    <p>Your transaction was completed successfully.</p>
+
+                    <small>2 minutes ago</small>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="notification-card">
+
+                <div class="notification-icon blue">
+
+                    <i class="fa-solid fa-chart-line"></i>
+
+                </div>
+
+
+                <div>
+
+                    <h3>Weekly Report</h3>
+
+                    <p>Your weekly performance report is ready.</p>
+
+                    <small>1 hour ago</small>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="notification-card">
+
+                <div class="notification-icon orange">
+
+                    <i class="fa-solid fa-star"></i>
+
+                </div>
+
+
+                <div>
+
+                    <h3>New Achievement</h3>
+
+                    <p>Congratulations! You reached a new milestone.</p>
+
+                    <small>Yesterday</small>
+
+                </div>
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- ================= PROFILE PAGE ================= -->
+
+        <section class="page" id="profilePage">
+
+            <h1 class="page-title">Profile</h1>
+
+
+            <div class="profile-card">
+
+                <div class="profile-avatar">
+
+                    VC
+
+                </div>
+
+
+                <h2>Vishal Chapke</h2>
+
+                <p>Software Developer</p>
+
+
+                <button class="edit-profile">
+
+                    <i class="fa-solid fa-pen"></i>
+
+                    Edit Profile
+
+                </button>
+
+            </div>
+
+
+            <div class="settings-list">
+
+
+                <button class="setting-item">
+
+                    <div>
+
+                        <i class="fa-regular fa-user"></i>
+
+                        Personal Information
+
+                    </div>
+
+                    <i class="fa-solid fa-chevron-right"></i>
+
+                </button>
+
+
+                <button class="setting-item">
+
+                    <div>
+
+                        <i class="fa-solid fa-shield-halved"></i>
+
+                        Security
+
+                    </div>
+
+                    <i class="fa-solid fa-chevron-right"></i>
+
+                </button>
+
+
+                <button class="setting-item">
+
+                    <div>
+
+                        <i class="fa-solid fa-gear"></i>
+
+                        Settings
+
+                    </div>
+
+                    <i class="fa-solid fa-chevron-right"></i>
+
+                </button>
+
+
+                <button class="setting-item logout-btn">
+
+                    <div>
+
+                        <i class="fa-solid fa-right-from-bracket"></i>
+
+                        Logout
+
+                    </div>
+
+                </button>
+
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- ================= BOTTOM NAVIGATION ================= -->
+
+    <nav class="bottom-nav">
+
+
+        <button class="nav-item active" data-page="homePage">
+
+            <i class="fa-solid fa-house"></i>
+
+            <span>Home</span>
+
+        </button>
+
+
+        <button class="nav-item" data-page="analyticsPage">
+
+            <i class="fa-solid fa-chart-pie"></i>
+
+            <span>Analytics</span>
+
+        </button>
+
+
+        <button class="nav-item add-button">
+
+            <i class="fa-solid fa-plus"></i>
+
+        </button>
+
+
+        <button class="nav-item" data-page="notificationsPage">
+
+            <i class="fa-regular fa-bell"></i>
+
+            <span>Alerts</span>
+
+        </button>
+
+
+        <button class="nav-item" data-page="profilePage">
+
+            <i class="fa-regular fa-user"></i>
+
+            <span>Profile</span>
+
+        </button>
+
+
+    </nav>
+
+
+</div>
+
+
+<!-- JavaScript -->
+
+<script src="script.js"></script>
+
+</body>
+</html>
